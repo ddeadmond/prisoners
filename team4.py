@@ -47,12 +47,12 @@ def test_move(my_history, their_history, my_score, their_score, result):
 
 if __name__ == '__main__':
      
-    # Test 1: Betray on first move.
-    if test_move(my_history='',
-              their_history='', 
+    # Test 1:   Collude on first move.
+    if test_move(my_history='Collude',
+              their_history='Collude', 
               my_score=0,
               their_score=0,
-              result='b'):
+              result='c'):
          print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
